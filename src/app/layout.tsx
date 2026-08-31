@@ -1,0 +1,75 @@
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
+import Link from "next/link";
+import "./globals.css";
+
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
+
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: "RivalWiki — RIVALS (Roblox) Guides, Weapons & Tools",
+    template: "%s | RivalWiki",
+  },
+  description:
+    "Player toolbox for RIVALS on Roblox: weapon database, tier list, codes, and interactive tools like the weapon comparison calculator.",
+};
+
+const NAV_LINKS = [
+  { href: "/codes", label: "Codes" },
+  { href: "/weapons", label: "Weapons" },
+  { href: "/weapon-tier-list", label: "Tier List" },
+  { href: "/tools/weapon-comparison", label: "Compare Tool" },
+];
+
+export default function RootLayout({ children }: LayoutProps<"/">) {
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <body className="min-h-full flex flex-col bg-neutral-950 text-neutral-100">
+        <header className="border-b border-neutral-800 bg-neutral-950/95 sticky top-0 z-10">
+          <div className="mx-auto max-w-5xl flex items-center justify-between px-4 py-3">
+            <Link href="/" className="font-bold text-lg tracking-tight text-white">
+              Rival<span className="text-amber-400">Wiki</span>
+            </Link>
+            <nav className="flex gap-5 text-sm">
+              {NAV_LINKS.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-neutral-300 hover:text-white transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </nav>
+          </div>
+        </header>
+
+        <main className="flex-1 mx-auto w-full max-w-5xl px-4 py-8">
+          {children}
+        </main>
+
+        <footer className="border-t border-neutral-800 mt-12">
+          <div className="mx-auto max-w-5xl px-4 py-6 text-xs text-neutral-500 space-y-2">
+            <p>
+              RivalWiki is an unofficial fan-made resource and is not affiliated
+              with, endorsed by, or sponsored by Nosniy Games or Roblox
+              Corporation. RIVALS is a trademark of its respective owner.
+            </p>
+            <p>© {new Date().getFullYear()} RivalWiki.</p>
+          </div>
+        </footer>
+      </body>
+    </html>
+  );
+}
