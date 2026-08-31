@@ -9,6 +9,14 @@ const QUICK_LINKS = [
   { href: "/tools/weapon-comparison", title: "Weapon Comparison Tool", desc: "Pick two weapons, see the stats side by side." },
 ];
 
+const MORE_GUIDES = [
+  { href: "/maps", title: "Maps" },
+  { href: "/ranks", title: "Ranks" },
+  { href: "/keys", title: "Keys" },
+  { href: "/contracts", title: "Contracts" },
+  { href: "/movement", title: "Movement Guide" },
+];
+
 export default function Home() {
   return (
     <div className="space-y-12">
@@ -34,6 +42,21 @@ export default function Home() {
             <p className="text-sm text-neutral-400 mt-1">{item.desc}</p>
           </Link>
         ))}
+      </section>
+
+      <section className="space-y-3">
+        <h2 className="font-semibold text-white text-lg">More guides</h2>
+        <div className="flex flex-wrap gap-2">
+          {MORE_GUIDES.map((g) => (
+            <Link
+              key={g.href}
+              href={g.href}
+              className="text-sm rounded-full border border-neutral-800 bg-neutral-900 px-4 py-1.5 text-neutral-300 hover:border-amber-400/60 hover:text-white transition-colors"
+            >
+              {g.title}
+            </Link>
+          ))}
+        </div>
       </section>
 
       <section className="rounded-lg border border-neutral-800 bg-neutral-900/50 p-5 space-y-2">

@@ -27,6 +27,8 @@ const NAV_LINKS = [
   { href: "/weapons", label: "Weapons" },
   { href: "/weapon-tier-list", label: "Tier List" },
   { href: "/tools/weapon-comparison", label: "Compare Tool" },
+  { href: "/maps", label: "Maps" },
+  { href: "/ranks", label: "Ranks" },
 ];
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -37,11 +39,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col bg-neutral-950 text-neutral-100">
         <header className="border-b border-neutral-800 bg-neutral-950/95 sticky top-0 z-10">
-          <div className="mx-auto max-w-5xl flex items-center justify-between px-4 py-3">
+          <div className="mx-auto max-w-5xl flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
             <Link href="/" className="font-bold text-lg tracking-tight text-white">
               Rival<span className="text-amber-400">Wiki</span>
             </Link>
-            <nav className="flex gap-5 text-sm">
+            <nav className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
               {NAV_LINKS.map((link) => (
                 <Link
                   key={link.href}
