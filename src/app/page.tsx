@@ -10,11 +10,13 @@ const QUICK_LINKS = [
 ];
 
 const MORE_GUIDES = [
+  { href: "/beginner-guide", title: "Beginner Guide" },
   { href: "/maps", title: "Maps" },
   { href: "/ranks", title: "Ranks" },
   { href: "/keys", title: "Keys" },
   { href: "/contracts", title: "Contracts" },
   { href: "/movement", title: "Movement Guide" },
+  { href: "/tools/loadout-builder", title: "Loadout Builder" },
 ];
 
 export default function Home() {

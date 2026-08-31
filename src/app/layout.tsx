@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://rivalwiki.com"),
   title: {
     default: "RivalWiki — RIVALS (Roblox) Guides, Weapons & Tools",
     template: "%s | RivalWiki",
@@ -23,6 +24,7 @@ export const metadata: Metadata = {
 };
 
 const NAV_LINKS = [
+  { href: "/beginner-guide", label: "Beginner Guide" },
   { href: "/codes", label: "Codes" },
   { href: "/weapons", label: "Weapons" },
   { href: "/weapon-tier-list", label: "Tier List" },
