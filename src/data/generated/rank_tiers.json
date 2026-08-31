@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Bronze",
+    "has_sub_tiers": 1,
+    "notes": null,
+    "sort_order": 1
+  },
+  {
+    "name": "Silver",
+    "has_sub_tiers": 1,
+    "notes": null,
+    "sort_order": 2
+  },
+  {
+    "name": "Gold",
+    "has_sub_tiers": 1,
+    "notes": null,
+    "sort_order": 3
+  },
+  {
+    "name": "Platinum",
+    "has_sub_tiers": 1,
+    "notes": "Rank protection starts to fade here — losing at the bottom of the tier can demote you quickly.",
+    "sort_order": 4
+  },
+  {
+    "name": "Diamond",
+    "has_sub_tiers": 1,
+    "notes": null,
+    "sort_order": 5
+  },
+  {
+    "name": "Onyx",
+    "has_sub_tiers": 1,
+    "notes": null,
+    "sort_order": 6
+  },
+  {
+    "name": "Nemesis",
+    "has_sub_tiers": 0,
+    "notes": "No sub-tiers, above Onyx.",
+    "sort_order": 7
+  },
+  {
+    "name": "Archnemesis",
+    "has_sub_tiers": 0,
+    "notes": "Top of the ladder. Global Top 200 Archnemesis players can earn Mythical cosmetics each season.",
+    "sort_order": 8
+  }
+]

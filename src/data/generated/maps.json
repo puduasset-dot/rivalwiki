@@ -1,0 +1,177 @@
+[
+  {
+    "name": "Arena",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Backrooms",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Battleground",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Bridge",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Chess",
+    "category": "regular",
+    "notes": "Giant chessboard with numbered edges for orientation; open layout with chess pieces as cover, works for both long-range and close-quarters."
+  },
+  {
+    "name": "Crossroads",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Construction",
+    "category": "regular",
+    "notes": "Mirrored map with a crane and dangling crate; players spawn on a gap-filled second-floor area that's easy to fall through."
+  },
+  {
+    "name": "Dimension",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Docks",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Graveyard",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Iceberg",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Onyx",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Playground",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Splash",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Station",
+    "category": "regular",
+    "notes": "Former battle-royale lobby, revamped for RIVALS in early 2024; Western-themed train station with two buildings and breakable windows."
+  },
+  {
+    "name": "Shooting Range",
+    "category": "regular",
+    "notes": "Tutorial map; also where the Codes/Rewards feature gets unlocked."
+  },
+  {
+    "name": "Village",
+    "category": "regular",
+    "notes": null
+  },
+  {
+    "name": "Diorama Westown",
+    "category": "regular",
+    "notes": "Added in Season 3 (April 2026), Hollywood-themed."
+  },
+  {
+    "name": "Diorama Museum",
+    "category": "regular",
+    "notes": "Added in Season 3 (April 2026), Hollywood-themed."
+  },
+  {
+    "name": "Diorama Studio",
+    "category": "regular",
+    "notes": "Added in Season 3 (April 2026), Hollywood-themed."
+  },
+  {
+    "name": "Big Arena",
+    "category": "big",
+    "notes": null
+  },
+  {
+    "name": "Big Backrooms",
+    "category": "big",
+    "notes": null
+  },
+  {
+    "name": "Big Crossroads",
+    "category": "big",
+    "notes": null
+  },
+  {
+    "name": "Big Graveyard",
+    "category": "big",
+    "notes": null
+  },
+  {
+    "name": "Big Onyx",
+    "category": "big",
+    "notes": null
+  },
+  {
+    "name": "Big Splash",
+    "category": "big",
+    "notes": null
+  },
+  {
+    "name": "Big Station",
+    "category": "big",
+    "notes": null
+  },
+  {
+    "name": "Legacy Backrooms",
+    "category": "legacy",
+    "notes": "Private servers only."
+  },
+  {
+    "name": "Legacy Battleground",
+    "category": "legacy",
+    "notes": "Private servers only."
+  },
+  {
+    "name": "Legacy Crossroads",
+    "category": "legacy",
+    "notes": "Private servers only."
+  },
+  {
+    "name": "Legacy Docks",
+    "category": "legacy",
+    "notes": "Private servers only."
+  },
+  {
+    "name": "Legacy Onyx",
+    "category": "legacy",
+    "notes": "Private servers only."
+  },
+  {
+    "name": "Legacy Sandbox",
+    "category": "legacy",
+    "notes": "Private servers only."
+  },
+  {
+    "name": "Legacy Splash",
+    "category": "legacy",
+    "notes": "Private servers only."
+  },
+  {
+    "name": "Legacy Big Splash",
+    "category": "legacy",
+    "notes": "Private servers only."
+  }
+]

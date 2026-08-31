@@ -1,0 +1,44 @@
+[
+  {
+    "weapon_slug": "permafrost",
+    "weapon_name": "Permafrost",
+    "tier": "S",
+    "reason": "2-round burst at 14 dmg/bullet with a freeze/slow effect (up to -50% move speed) that locks opponents down. Contraband rarity, 700 Keys."
+  },
+  {
+    "weapon_slug": "paintball-gun",
+    "weapon_name": "Paintball Gun",
+    "tier": "S",
+    "reason": "22 damage per shot with the fastest practical fire rate among primaries; rewards tracking aim at the mid-range most fights happen at."
+  },
+  {
+    "weapon_slug": "sniper",
+    "weapon_name": "Sniper",
+    "tier": "A",
+    "reason": "50 body damage, reportedly a guaranteed kill on headshot. High skill ceiling — the -20% move speed penalty punishes bad positioning."
+  },
+  {
+    "weapon_slug": "assault-rifle",
+    "weapon_name": "Assault Rifle",
+    "tier": "A",
+    "reason": "Best free weapon in the game: 12 dmg at a 0.10s fire rate with a 20/100 ammo pool. Season 3 traded a damage nerf (13→12) for a fire-rate buff (0.11s→0.10s)."
+  },
+  {
+    "weapon_slug": "compound-bow",
+    "weapon_name": "Compound Bow",
+    "tier": "A",
+    "reason": "High skill/high reward: pierces Riot Shields via its Heavy Draw mechanic, but low projectile velocity means shots must be heavily led."
+  },
+  {
+    "weapon_slug": "burst-rifle",
+    "weapon_name": "Burst Rifle",
+    "tier": "B",
+    "reason": "Strong close-mid range value at only 25 Keys, even after the March 2026 Lucky Update nerfed body damage."
+  },
+  {
+    "weapon_slug": "minigun",
+    "weapon_name": "Minigun",
+    "tier": "B",
+    "reason": "Shreds groups on sustained fire, but spin-up time and a mobility penalty make it weak in 1v1 openings."
+  }
+]
