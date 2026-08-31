@@ -28,20 +28,29 @@ const MORE_GUIDES = [
 export default function Home() {
   return (
     <div className="space-y-12">
-      <section className="flex flex-col sm:flex-row gap-5 sm:items-center">
+      <section className="relative rounded-2xl overflow-hidden border border-neutral-800 h-72 sm:h-80">
         <Image
-          src="/rivals-game-icon.png"
-          alt="RIVALS official game icon"
-          width={96}
-          height={96}
-          className="rounded-2xl border border-neutral-800 shrink-0"
+          src="/media/gameplay-duel.jpg"
+          alt="RIVALS gameplay screenshot"
+          fill
           priority
+          className="object-cover"
         />
-        <div className="space-y-4">
-          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
-            RIVALS player toolbox
-          </h1>
-          <p className="text-neutral-400 max-w-2xl">
+        <div className="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/70 to-neutral-950/10" />
+        <div className="absolute inset-0 flex flex-col justify-end gap-4 p-6 sm:p-8">
+          <div className="flex items-center gap-4">
+            <Image
+              src="/rivals-game-icon.png"
+              alt="RIVALS official game icon"
+              width={64}
+              height={64}
+              className="rounded-xl border border-neutral-700 shrink-0"
+            />
+            <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-white drop-shadow">
+              RIVALS player toolbox
+            </h1>
+          </div>
+          <p className="text-neutral-300 max-w-2xl drop-shadow">
             Straight answers and tools for{" "}
             <a
               href="https://www.roblox.com/games/17625359962/RIVALS"
@@ -68,6 +77,25 @@ export default function Home() {
             <p className="text-sm text-neutral-400 mt-1">{item.desc}</p>
           </Link>
         ))}
+      </section>
+
+      <section className="relative rounded-xl overflow-hidden border border-neutral-800 h-40">
+        <Image
+          src="/media/gameplay-docks.jpg"
+          alt="RIVALS gameplay screenshot"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/40 to-transparent" />
+        <div className="absolute inset-0 flex flex-col justify-center gap-2 p-6 max-w-md">
+          <h2 className="font-semibold text-white text-lg">Explore the maps</h2>
+          <p className="text-sm text-neutral-300">
+            35 maps tracked — regular rotation, big variants, and legacy private-server maps.
+          </p>
+          <Link href="/maps" className="text-sm text-amber-400 hover:underline w-fit">
+            See all maps →
+          </Link>
+        </div>
       </section>
 
       <section className="space-y-3">

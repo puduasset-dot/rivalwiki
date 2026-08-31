@@ -78,8 +78,9 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               Corporation. RIVALS is a trademark of its respective owner.
             </p>
             <p>
-              Game icon via Roblox&apos;s official thumbnail API. Weapon icons
-              sourced from the community-maintained{" "}
+              Game icon via Roblox&apos;s official thumbnail API. Homepage
+              screenshots are stills from RIVALS&apos; official Roblox store
+              page preview video. Weapon icons sourced from the community-maintained{" "}
               <a
                 href="https://robloxrivals.fandom.com"
                 target="_blank"
