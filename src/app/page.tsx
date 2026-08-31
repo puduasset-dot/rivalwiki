@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { codes } from "@/data/codes";
 import { weapons } from "@/data/weapons";
@@ -22,15 +23,33 @@ const MORE_GUIDES = [
 export default function Home() {
   return (
     <div className="space-y-12">
-      <section className="space-y-4">
-        <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
-          RIVALS player toolbox
-        </h1>
-        <p className="text-neutral-400 max-w-2xl">
-          Straight answers and tools for RIVALS on Roblox — weapon stats, codes,
-          and a tier list, each one tagged with where the data came from and
-          when it was last checked. No 2,000-word filler.
-        </p>
+      <section className="flex flex-col sm:flex-row gap-5 sm:items-center">
+        <Image
+          src="/rivals-game-icon.png"
+          alt="RIVALS official game icon"
+          width={96}
+          height={96}
+          className="rounded-2xl border border-neutral-800 shrink-0"
+          priority
+        />
+        <div className="space-y-4">
+          <h1 className="text-3xl sm:text-4xl font-bold tracking-tight text-white">
+            RIVALS player toolbox
+          </h1>
+          <p className="text-neutral-400 max-w-2xl">
+            Straight answers and tools for{" "}
+            <a
+              href="https://www.roblox.com/games/17625359962/RIVALS"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-amber-400 hover:underline"
+            >
+              RIVALS on Roblox
+            </a>{" "}
+            — weapon stats, codes, and a tier list, each one tagged with where
+            the data came from and when it was last checked. No 2,000-word filler.
+          </p>
+        </div>
       </section>
 
       <section className="grid sm:grid-cols-2 gap-4">

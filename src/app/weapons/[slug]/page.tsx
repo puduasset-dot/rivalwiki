@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { weapons, getWeapon, DATA_SOURCE } from "@/data/weapons";
+import { weapons, getWeapon, DATA_SOURCE, MAX_DAMAGE_VALUE } from "@/data/weapons";
 import { SourceNote } from "@/components/SourceNote";
+import { StatBar } from "@/components/StatBar";
 
 export function generateStaticParams() {
   return weapons.map((w) => ({ slug: w.slug }));
@@ -18,6 +20,8 @@ export async function generateMetadata(props: PageProps<"/weapons/[slug]">): Pro
   };
 }
 
+const MAX_RPS = 1 / 0.07; // fastest fire rate in the dataset (Uzi, 0.07s)
+
 export default async function WeaponPage(props: PageProps<"/weapons/[slug]">) {
   const { slug } = await props.params;
   const weapon = getWeapon(slug);
@@ -32,6 +36,8 @@ export default async function WeaponPage(props: PageProps<"/weapons/[slug]">) {
     ["Reload", weapon.reload],
   ];
 
+  const rps = weapon.fireRateValue ? 1 / weapon.fireRateValue : undefined;
+
   return (
     <div className="space-y-6">
       <div>
@@ -40,10 +46,37 @@ export default async function WeaponPage(props: PageProps<"/weapons/[slug]">) {
         </Link>
       </div>
 
-      <div className="space-y-2">
-        <h1 className="text-2xl font-bold text-white">{weapon.name}</h1>
-        <SourceNote label={DATA_SOURCE.label} url={DATA_SOURCE.url} lastChecked={DATA_SOURCE.lastChecked} />
+      <div className="flex items-center gap-4">
+        <div className="shrink-0 w-16 h-16 rounded-lg bg-neutral-800 flex items-center justify-center overflow-hidden">
+          <Image src={`/weapons/${weapon.slug}.webp`} alt="" width={64} height={64} className="object-contain p-1.5" />
+        </div>
+        <div className="space-y-1">
+          <h1 className="text-2xl font-bold text-white">{weapon.name}</h1>
+          <SourceNote label={DATA_SOURCE.label} url={DATA_SOURCE.url} lastChecked={DATA_SOURCE.lastChecked} />
+        </div>
       </div>
+
+      {(weapon.damageValue || rps) && (
+        <div className="rounded-lg border border-neutral-800 bg-neutral-900 p-4 space-y-3">
+          {weapon.damageValue && (
+            <StatBar
+              label="Damage (close range)"
+              value={weapon.damageValue}
+              max={MAX_DAMAGE_VALUE}
+              displayValue={String(weapon.damageValue)}
+            />
+          )}
+          {rps && (
+            <StatBar
+              label="Fire rate"
+              value={rps}
+              max={MAX_RPS}
+              displayValue={`${rps.toFixed(1)} shots/sec`}
+              colorClass="bg-blue-400"
+            />
+          )}
+        </div>
+      )}
 
       <div className="rounded-lg border border-neutral-800 overflow-hidden">
         <table className="w-full text-sm">

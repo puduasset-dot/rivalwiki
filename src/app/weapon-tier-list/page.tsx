@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { tierList, TIER_LIST_SOURCE, type Tier } from "@/data/tier-list";
 import { SourceNote } from "@/components/SourceNote";
@@ -44,9 +45,14 @@ export default function TierListPage() {
               </div>
               <div className="flex-1 space-y-2">
                 {entries.map((e) => (
-                  <div key={e.weaponSlug} className="rounded-lg border border-neutral-800 bg-neutral-900 p-3">
-                    <p className="font-medium text-white">{e.weaponName}</p>
-                    <p className="text-sm text-neutral-400 mt-1">{e.reason}</p>
+                  <div key={e.weaponSlug} className="flex gap-3 rounded-lg border border-neutral-800 bg-neutral-900 p-3">
+                    <div className="shrink-0 w-9 h-9 rounded-md bg-neutral-800 flex items-center justify-center overflow-hidden">
+                      <Image src={`/weapons/${e.weaponSlug}.webp`} alt="" width={36} height={36} className="object-contain p-1" />
+                    </div>
+                    <div>
+                      <p className="font-medium text-white">{e.weaponName}</p>
+                      <p className="text-sm text-neutral-400 mt-1">{e.reason}</p>
+                    </div>
                   </div>
                 ))}
               </div>

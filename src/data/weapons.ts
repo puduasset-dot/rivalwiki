@@ -10,6 +10,10 @@ export interface Weapon {
   ammo?: string;
   reload?: string;
   notes?: string;
+  /** Close-range peak damage per shot/swing, for the visual stat bar. Omitted where not confidently derivable from the source data. */
+  damageValue?: number;
+  /** Seconds between shots/swings — lower is faster. Omitted for burst/unconfirmed weapons. */
+  fireRateValue?: number;
 }
 
 // Source: BloxGuidesGG weapons database (synced from the RIVALS Fandom wiki),
@@ -32,6 +36,8 @@ export const weapons: Weapon[] = [
     ammo: "20 / 100",
     reload: "1.56s",
     notes: "Default starter primary, reliable at all ranges.",
+    damageValue: 12,
+    fireRateValue: 0.10,
   },
   {
     slug: "bow",
@@ -42,6 +48,8 @@ export const weapons: Weapon[] = [
     fireRate: "0.25s",
     ammo: "1 / 30",
     reload: "0.19s",
+    damageValue: 60,
+    fireRateValue: 0.25,
   },
   {
     slug: "shotgun",
@@ -51,6 +59,8 @@ export const weapons: Weapon[] = [
     damage: "8x10 → 2.5x10 (falloff)",
     fireRate: "0.70s",
     ammo: "7 / 35",
+    damageValue: 80,
+    fireRateValue: 0.70,
   },
   {
     slug: "burst-rifle",
@@ -62,6 +72,8 @@ export const weapons: Weapon[] = [
     ammo: "12 / 60",
     reload: "1.60s",
     notes: "Body damage was reported nerfed 20→18 in the March 2026 \"Lucky Update\" — pending confirmation against current patch notes.",
+    damageValue: 20,
+    fireRateValue: 0.60,
   },
   {
     slug: "rpg",
@@ -73,6 +85,8 @@ export const weapons: Weapon[] = [
     ammo: "1 / 17",
     reload: "1.04s",
     notes: "Explosive splash, applies a movement speed slow on hit.",
+    damageValue: 50,
+    fireRateValue: 0.25,
   },
   {
     slug: "sniper",
@@ -84,6 +98,8 @@ export const weapons: Weapon[] = [
     ammo: "4 / 12",
     reload: "1.80s",
     notes: "Movement speed penalty while equipped.",
+    damageValue: 50,
+    fireRateValue: 1.50,
   },
   {
     slug: "permafrost",
@@ -93,6 +109,7 @@ export const weapons: Weapon[] = [
     damage: "14 per bullet (2-round burst)",
     fireRate: "Burst",
     notes: "Contraband rarity. On-hit slow (up to -50% move speed) and a freeze ability. Full stat sheet (reload, magazine, range) not yet confirmed from an official source — flagged for follow-up.",
+    damageValue: 14,
   },
   {
     slug: "paintball-gun",
@@ -102,6 +119,7 @@ export const weapons: Weapon[] = [
     damage: "22 per shot",
     fireRate: "Fast (exact figure unconfirmed)",
     notes: "Prime rarity. Full stat sheet not yet confirmed from an official source — flagged for follow-up.",
+    damageValue: 22,
   },
   {
     slug: "compound-bow",
@@ -130,6 +148,8 @@ export const weapons: Weapon[] = [
     fireRate: "0.13s",
     ammo: "13 / 91",
     reload: "1.06s",
+    damageValue: 12,
+    fireRateValue: 0.13,
   },
   {
     slug: "spray",
@@ -140,6 +160,8 @@ export const weapons: Weapon[] = [
     fireRate: "0.50s",
     ammo: "30 / 90",
     reload: "1.30s",
+    damageValue: 8,
+    fireRateValue: 0.50,
   },
   {
     slug: "shorty",
@@ -150,6 +172,8 @@ export const weapons: Weapon[] = [
     fireRate: "0.12s",
     ammo: "2 / 18",
     reload: "1.70s",
+    damageValue: 75,
+    fireRateValue: 0.12,
   },
   {
     slug: "uzi",
@@ -160,6 +184,8 @@ export const weapons: Weapon[] = [
     fireRate: "0.07s",
     ammo: "27 / 108",
     reload: "1.50s",
+    damageValue: 8,
+    fireRateValue: 0.07,
   },
   {
     slug: "revolver",
@@ -170,6 +196,8 @@ export const weapons: Weapon[] = [
     fireRate: "0.40s",
     ammo: "6 / 36",
     reload: "1.80s",
+    damageValue: 30,
+    fireRateValue: 0.40,
   },
   {
     slug: "fists",
@@ -178,6 +206,8 @@ export const weapons: Weapon[] = [
     cost: "Free",
     damage: "30",
     fireRate: "0.35s",
+    damageValue: 30,
+    fireRateValue: 0.35,
   },
   {
     slug: "chainsaw",
@@ -187,6 +217,8 @@ export const weapons: Weapon[] = [
     damage: "60",
     fireRate: "0.60s",
     ammo: "150 fuel",
+    damageValue: 60,
+    fireRateValue: 0.60,
   },
   {
     slug: "knife",
@@ -195,6 +227,8 @@ export const weapons: Weapon[] = [
     cost: "20 Keys",
     damage: "40",
     fireRate: "0.60s",
+    damageValue: 40,
+    fireRateValue: 0.60,
   },
   {
     slug: "katana",
@@ -203,6 +237,8 @@ export const weapons: Weapon[] = [
     cost: "45 Keys",
     damage: "45",
     fireRate: "0.70s",
+    damageValue: 45,
+    fireRateValue: 0.70,
   },
   {
     slug: "battle-axe",
@@ -211,6 +247,8 @@ export const weapons: Weapon[] = [
     cost: "50 Keys",
     damage: "55",
     fireRate: "0.70s",
+    damageValue: 55,
+    fireRateValue: 0.70,
   },
   {
     slug: "flashbang",
@@ -239,3 +277,6 @@ export function getWeapon(slug: string) {
 export function weaponsByCategory(category: WeaponCategory) {
   return weapons.filter((w) => w.category === category);
 }
+
+export const MAX_DAMAGE_VALUE = Math.max(...weapons.map((w) => w.damageValue ?? 0));
+export const MAX_FIRE_RATE_VALUE = Math.max(...weapons.map((w) => w.fireRateValue ?? 0));

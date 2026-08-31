@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { weaponsByCategory, type WeaponCategory } from "@/data/weapons";
+import Image from "next/image";
+import { weaponsByCategory, getWeapon, type WeaponCategory } from "@/data/weapons";
 
 const SLOTS: { key: WeaponCategory; label: string }[] = [
   { key: "primary", label: "Primary" },
@@ -35,7 +36,7 @@ export function LoadoutBuilderClient() {
             >
               <option value="">Select {slot.label.toLowerCase()}…</option>
               {weaponsByCategory(slot.key).map((w) => (
-                <option key={w.slug} value={w.name}>
+                <option key={w.slug} value={w.slug}>
                   {w.name}
                 </option>
               ))}
@@ -45,15 +46,24 @@ export function LoadoutBuilderClient() {
       </div>
 
       {complete ? (
-        <div className="rounded-lg border border-amber-400/40 bg-neutral-900 p-5 space-y-2">
+        <div className="rounded-lg border border-amber-400/40 bg-neutral-900 p-5 space-y-3">
           <p className="text-sm text-neutral-500">Your RIVALS Loadout</p>
-          <div className="grid sm:grid-cols-2 gap-2 text-sm">
-            {SLOTS.map((slot) => (
-              <p key={slot.key}>
-                <span className="text-neutral-500">{slot.label}: </span>
-                <span className="text-white font-medium">{selection[slot.key]}</span>
-              </p>
-            ))}
+          <div className="grid sm:grid-cols-2 gap-3 text-sm">
+            {SLOTS.map((slot) => {
+              const weapon = getWeapon(selection[slot.key]);
+              if (!weapon) return null;
+              return (
+                <div key={slot.key} className="flex items-center gap-2">
+                  <div className="w-9 h-9 rounded-md bg-neutral-800 flex items-center justify-center overflow-hidden shrink-0">
+                    <Image src={`/weapons/${weapon.slug}.webp`} alt="" width={36} height={36} className="object-contain p-1" />
+                  </div>
+                  <div>
+                    <p className="text-neutral-500 text-xs">{slot.label}</p>
+                    <p className="text-white font-medium">{weapon.name}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       ) : (

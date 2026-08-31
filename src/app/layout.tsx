@@ -70,6 +70,19 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               with, endorsed by, or sponsored by Nosniy Games or Roblox
               Corporation. RIVALS is a trademark of its respective owner.
             </p>
+            <p>
+              Game icon via Roblox&apos;s official thumbnail API. Weapon icons
+              sourced from the community-maintained{" "}
+              <a
+                href="https://robloxrivals.fandom.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-neutral-300 underline"
+              >
+                RIVALS Fandom wiki
+              </a>
+              .
+            </p>
             <p>© {new Date().getFullYear()} RivalWiki.</p>
           </div>
         </footer>

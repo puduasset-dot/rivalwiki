@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { weapons, DATA_SOURCE, weaponsByCategory, type WeaponCategory } from "@/data/weapons";
 import { SourceNote } from "@/components/SourceNote";
@@ -35,13 +36,18 @@ export default function WeaponsPage() {
                 <Link
                   key={w.slug}
                   href={`/weapons/${w.slug}`}
-                  className="rounded-lg border border-neutral-800 bg-neutral-900 p-4 hover:border-amber-400/60 transition-colors"
+                  className="flex gap-3 rounded-lg border border-neutral-800 bg-neutral-900 p-4 hover:border-amber-400/60 transition-colors"
                 >
-                  <div className="flex items-baseline justify-between">
-                    <span className="font-medium text-white">{w.name}</span>
-                    <span className="text-xs text-neutral-500">{w.cost}</span>
+                  <div className="shrink-0 w-9 h-9 rounded-md bg-neutral-800 flex items-center justify-center overflow-hidden">
+                    <Image src={`/weapons/${w.slug}.webp`} alt="" width={36} height={36} className="object-contain p-1" />
                   </div>
-                  <p className="text-sm text-neutral-400 mt-1">Damage: {w.damage}</p>
+                  <div className="min-w-0">
+                    <div className="flex items-baseline justify-between gap-2">
+                      <span className="font-medium text-white">{w.name}</span>
+                      <span className="text-xs text-neutral-500 shrink-0">{w.cost}</span>
+                    </div>
+                    <p className="text-sm text-neutral-400 mt-1">Damage: {w.damage}</p>
+                  </div>
                 </Link>
               ))}
             </div>
