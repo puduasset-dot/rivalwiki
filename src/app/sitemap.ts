@@ -18,6 +18,11 @@ const STATIC_ROUTES = [
   "/contracts",
   "/movement",
   "/beginner-guide",
+  "/settings",
+  "/skins",
+  "/game-modes",
+  "/best-loadouts",
+  "/tools/crosshair-generator",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {

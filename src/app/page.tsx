@@ -17,7 +17,12 @@ const MORE_GUIDES = [
   { href: "/keys", title: "Keys" },
   { href: "/contracts", title: "Contracts" },
   { href: "/movement", title: "Movement Guide" },
+  { href: "/settings", title: "Best Settings" },
+  { href: "/skins", title: "Skins" },
+  { href: "/game-modes", title: "Game Modes" },
+  { href: "/best-loadouts", title: "Best Loadouts" },
   { href: "/tools/loadout-builder", title: "Loadout Builder" },
+  { href: "/tools/crosshair-generator", title: "Crosshair Generator" },
 ];
 
 export default function Home() {
