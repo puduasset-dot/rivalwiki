@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { rankTiers, RANKED_REQUIREMENTS, RANKED_MECHANICS, RANKS_SOURCE } from "@/data/ranks";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Ranks",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function RanksPage() {
   return (
     <div className="space-y-8">
+      <PageBanner src="/media/trailer-sniper-scope.jpg" alt="Lining up a precise shot in RIVALS" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Ranks</h1>
         <SourceNote label={RANKS_SOURCE.label} lastChecked={RANKS_SOURCE.lastChecked} />

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { codes, CODES_SOURCE, HOW_TO_REDEEM } from "@/data/codes";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Codes",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function CodesPage() {
   return (
     <div className="space-y-6">
+      <PageBanner src="/media/rivals-logo-screen.jpg" alt="RIVALS title screen" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Codes</h1>
         <SourceNote label={CODES_SOURCE.label} lastChecked={CODES_SOURCE.lastChecked} />

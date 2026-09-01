@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { OBTAIN_METHODS, notableSkins, SKINS_SOURCE } from "@/data/skins";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Skins",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function SkinsPage() {
   return (
     <div className="space-y-8">
+      <PageBanner src="/media/trailer-crossfire.jpg" alt="RIVALS gunfight with tracer rounds" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Skins</h1>
         <SourceNote label={SKINS_SOURCE.label} url={SKINS_SOURCE.url} lastChecked={SKINS_SOURCE.lastChecked} />

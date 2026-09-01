@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { weapons, DATA_SOURCE, weaponsByCategory, type WeaponCategory } from "@/data/weapons";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Weapons Database",
@@ -19,6 +20,7 @@ const CATEGORIES: { key: WeaponCategory; label: string }[] = [
 export default function WeaponsPage() {
   return (
     <div className="space-y-8">
+      <PageBanner src="/media/trailer-assault-rifle.jpg" alt="RIVALS weapon in hand" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Weapons Database</h1>
         <SourceNote label={DATA_SOURCE.label} url={DATA_SOURCE.url} lastChecked={DATA_SOURCE.lastChecked} />
