@@ -45,6 +45,17 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3013629120968191"
           crossOrigin="anonymous"
         />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-QXZEHT9JWH" />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-QXZEHT9JWH');
+            `,
+          }}
+        />
       </head>
       <body className="min-h-full flex flex-col bg-neutral-950 text-neutral-100">
         <header className="border-b border-neutral-800 bg-neutral-950/95 sticky top-0 z-10">
