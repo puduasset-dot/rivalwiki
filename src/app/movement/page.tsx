@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { movementTechs, MOVEMENT_SOURCE, type MovementTech } from "@/data/movement";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Movement Guide",
@@ -16,6 +17,11 @@ const DIFFICULTY_COLOR: Record<MovementTech["difficulty"], string> = {
 export default function MovementPage() {
   return (
     <div className="space-y-6">
+      <PageBanner
+        src="/media/gameplay-range.jpg"
+        alt="RIVALS shooting range gameplay screenshot"
+        caption="Shooting Range — where movement tech unlocks"
+      />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Movement Guide</h1>
         <SourceNote label={MOVEMENT_SOURCE.label} lastChecked={MOVEMENT_SOURCE.lastChecked} />

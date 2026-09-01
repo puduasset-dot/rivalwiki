@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { maps, MAPS_SOURCE, type MapCategory } from "@/data/maps";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Maps",
@@ -16,6 +17,11 @@ const CATEGORIES: { key: MapCategory; label: string }[] = [
 export default function MapsPage() {
   return (
     <div className="space-y-8">
+      <PageBanner
+        src="/media/gameplay-snow.jpg"
+        alt="RIVALS snowy map gameplay screenshot"
+        caption="Real match, one of the winter-themed maps"
+      />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Maps</h1>
         <SourceNote label={MAPS_SOURCE.label} lastChecked={MAPS_SOURCE.lastChecked} />

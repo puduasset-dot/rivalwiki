@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Beginner Guide",
@@ -48,6 +49,11 @@ const STEPS = [
 export default function BeginnerGuidePage() {
   return (
     <div className="space-y-6">
+      <PageBanner
+        src="/media/gameplay-sky.jpg"
+        alt="RIVALS shooting range gameplay screenshot"
+        caption="Practicing at the Shooting Range"
+      />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Beginner Guide</h1>
         <p className="text-sm text-neutral-400">

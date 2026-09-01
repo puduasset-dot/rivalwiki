@@ -4,6 +4,7 @@ import Link from "next/link";
 import { curatedLoadouts, LOADOUTS_SOURCE } from "@/data/loadouts";
 import { getWeapon } from "@/data/weapons";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Best Loadouts",
@@ -20,6 +21,11 @@ const SLOTS = [
 export default function BestLoadoutsPage() {
   return (
     <div className="space-y-8">
+      <PageBanner
+        src="/media/gameplay-dusk.jpg"
+        alt="RIVALS gameplay screenshot at dusk"
+        caption="Loadout in action during a real match"
+      />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Best Loadouts</h1>
         <SourceNote label={LOADOUTS_SOURCE.label} lastChecked={LOADOUTS_SOURCE.lastChecked} />
