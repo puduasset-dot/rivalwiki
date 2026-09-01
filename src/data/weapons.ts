@@ -50,11 +50,14 @@ export const weapons: Weapon[] = (raw as WeaponRow[]).map((r) => ({
 }));
 
 // Original data provenance (before it was loaded into D1) — not pulled from
-// an official Nosniy Games stat sheet, treat as community-verified.
+// an official Nosniy Games stat sheet, treat as community-verified. The
+// first 22 weapons came via BloxGuidesGG's aggregation; the remaining 31
+// were pulled directly from the RIVALS Fandom wiki's per-weapon stat
+// infoboxes (both ultimately trace back to the same community wiki).
 export const DATA_SOURCE = {
-  label: "BloxGuidesGG weapons database (community, synced from RIVALS Fandom wiki)",
-  url: "https://bloxguidesgg.com/games/rivals/wiki/weapons",
-  lastChecked: "2026-08-31",
+  label: "RIVALS Fandom wiki weapon pages (community-maintained, cross-checked via BloxGuidesGG)",
+  url: "https://robloxrivals.fandom.com/wiki/Weapons",
+  lastChecked: "2026-09-01",
 };
 
 export function getWeapon(slug: string) {
