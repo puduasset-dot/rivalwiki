@@ -10,7 +10,8 @@
     "reload": "1.56s",
     "notes": "Default starter primary, reliable at all ranges.",
     "damage_value": 12,
-    "fire_rate_value": 0.1
+    "fire_rate_value": 0.1,
+    "overview": "The Assault Rifle is a weapon with well-rounded stats, as it functions well at any range. It requires the player to keep their crosshair on their opponents to deal its damage. This is the default primary weapon that the player obtains first when joining the game."
   },
   {
     "slug": "bow",
@@ -23,7 +24,8 @@
     "reload": "0.19s",
     "notes": null,
     "damage_value": 60,
-    "fire_rate_value": 0.25
+    "fire_rate_value": 0.25,
+    "overview": "The Bow is a projectile weapon that mainly provides movement through its double jump passive and short cooldown. It also allows for quick shots with a high fire rate."
   },
   {
     "slug": "shotgun",
@@ -36,7 +38,8 @@
     "reload": null,
     "notes": null,
     "damage_value": 80,
-    "fire_rate_value": 0.7
+    "fire_rate_value": 0.7,
+    "overview": "The Shotgun is a weapon that excels in close-range combat. Its damage is distance-dependent, meaning the closer you are to your opponent, the more damage you inflict. Each shot fires 10 pellets. Its power shines in tight spaces, allowing you to maximize damage output by getting up close to your targets. Mastering timing and positioning will enable you to unleash devastating attacks and dominate in close-quarters encounters."
   },
   {
     "slug": "burst-rifle",
@@ -49,7 +52,8 @@
     "reload": "1.60s",
     "notes": "Body damage was reported nerfed 20→18 in the March 2026 \"Lucky Update\" — pending confirmation against current patch notes.",
     "damage_value": 20,
-    "fire_rate_value": 0.6
+    "fire_rate_value": 0.6,
+    "overview": "The Burst Rifle is a weapon that excels in giving quick damage in 3 short bursts. It is a strong side-grade to the Assault Rifle for those who prefer hitting and running rather than shooting upfront."
   },
   {
     "slug": "rpg",
@@ -62,7 +66,8 @@
     "reload": "1.04s",
     "notes": "Explosive splash, applies a movement speed slow on hit.",
     "damage_value": 50,
-    "fire_rate_value": 0.25
+    "fire_rate_value": 0.25,
+    "overview": "The RPG is a weapon that launches a blasting rocket. The rocket deals splash damage with no damage drop-off and applies critical damage on direct hits. The rocket knocks back the user, teammates, and enemies if they are in its radius, allowing for increased mobility despite the low movement speed of the weapon."
   },
   {
     "slug": "sniper",
@@ -75,7 +80,8 @@
     "reload": "1.80s",
     "notes": "Movement speed penalty while equipped.",
     "damage_value": 50,
-    "fire_rate_value": 1.5
+    "fire_rate_value": 1.5,
+    "overview": "The Sniper is a weapon which requires good aim. The scope will always have the same magnification effect (depending on the ADS), its scope functioning similarly to an ACOG sight combined with a traditional sniper scope. When used properly, this weapon can be extremely powerful in both long-range and close-range situations, allowing for the usage of versatile tactical options in various combat scenarios."
   },
   {
     "slug": "permafrost",
@@ -88,7 +94,8 @@
     "reload": null,
     "notes": "Contraband rarity. On-hit slow (up to -50% move speed) and a freeze ability. Full stat sheet (reload, magazine, range) not yet confirmed from an official source — flagged for follow-up.",
     "damage_value": 14,
-    "fire_rate_value": null
+    "fire_rate_value": null,
+    "overview": "The Permafrost is a submachine gun that fires in a 2-round burst. Its bullets slow down enemies, making it very useful for closing distances."
   },
   {
     "slug": "paintball-gun",
@@ -101,20 +108,8 @@
     "reload": null,
     "notes": "Prime rarity. Full stat sheet not yet confirmed from an official source — flagged for follow-up.",
     "damage_value": 22,
-    "fire_rate_value": null
-  },
-  {
-    "slug": "compound-bow",
-    "name": "Compound Bow",
-    "category": "primary",
-    "cost": "Unconfirmed",
-    "damage": "Unconfirmed",
-    "fire_rate": "Unconfirmed",
-    "ammo": null,
-    "reload": null,
-    "notes": "Heavy Draw mechanic pierces Riot Shields. Low projectile velocity requires leading shots. Full stat sheet not yet confirmed — flagged for follow-up.",
-    "damage_value": null,
-    "fire_rate_value": null
+    "fire_rate_value": null,
+    "overview": "The Paintball Gun is a weapon that features a slightly slow fire rate but excels in sustained high damage output, making each shot impactful. Hitting shots can disorient the enemy as each shot splatters paint around the enemy's screen."
   },
   {
     "slug": "minigun",
@@ -127,7 +122,8 @@
     "reload": null,
     "notes": "Prime rarity. Mobility penalty while firing. Full stat sheet not yet confirmed — flagged for follow-up.",
     "damage_value": null,
-    "fire_rate_value": null
+    "fire_rate_value": null,
+    "overview": "The Minigun is a weapon with an extremely fast fire rate and a high DPS. It has a 25% speed penalty while equipped, and a 50% speed penalty while aiming."
   },
   {
     "slug": "handgun",
@@ -140,7 +136,8 @@
     "reload": "1.06s",
     "notes": null,
     "damage_value": 12,
-    "fire_rate_value": 0.13
+    "fire_rate_value": 0.13,
+    "overview": "The Handgun is a weapon with well-rounded stats, and compared to the Assault Rifle, it has decent DPS. However, it is Semi-Automatic, meaning that for rapid fire you must pull the trigger multiple times. The Handgun is the initial side-arm for players, being part of the first loadout a player uses (which is frequently referred to as the \"default loadout\")."
   },
   {
     "slug": "spray",
@@ -153,7 +150,8 @@
     "reload": "1.30s",
     "notes": null,
     "damage_value": 8,
-    "fire_rate_value": 0.5
+    "fire_rate_value": 0.5,
+    "overview": "The Spray is a weapon that is basically a lightweight version of the Burst Rifle, but with lessened damage. Since this weapon uses illegally-modified-armor-piercing-rounds, it can bypass Riot Shield and the deflection ability of Katana. This makes it one of the best secondaries for countering these weapons."
   },
   {
     "slug": "shorty",
@@ -166,7 +164,8 @@
     "reload": "1.70s",
     "notes": null,
     "damage_value": 75,
-    "fire_rate_value": 0.12
+    "fire_rate_value": 0.12,
+    "overview": "The Shorty is a weapon that is a lightweight version of the Shotgun. It fires 10 pellets per shot. It is extremely powerful when used at close range, but extremely bad when used at long range."
   },
   {
     "slug": "uzi",
@@ -179,7 +178,8 @@
     "reload": "1.50s",
     "notes": null,
     "damage_value": 8,
-    "fire_rate_value": 0.07
+    "fire_rate_value": 0.07,
+    "overview": "The Uzi is a machine pistol that works almost the same as the Assault Rifle. Like it, the Uzi also provides a high fire rate for damage. However, its bullets spread slightly, so its shots are somewhat inaccurate."
   },
   {
     "slug": "revolver",
@@ -192,7 +192,8 @@
     "reload": "1.80s",
     "notes": null,
     "damage_value": 30,
-    "fire_rate_value": 0.4
+    "fire_rate_value": 0.4,
+    "overview": "The Revolver is a slow but powerful weapon that deals heavy damage. However, it is semi-automatic, so you will need to click on each shot."
   },
   {
     "slug": "fists",
@@ -205,7 +206,8 @@
     "reload": null,
     "notes": null,
     "damage_value": 30,
-    "fire_rate_value": 0.35
+    "fire_rate_value": 0.35,
+    "overview": "The Fists are a weapon that is very useful in getting on your ground after firing at the enemy, and also good for cancelling out unnecessary shoot cooldowns or reload cooldowns for weapons like the Sniper. This is the default melee weapon that you get for free when you join the game."
   },
   {
     "slug": "chainsaw",
@@ -218,7 +220,8 @@
     "reload": null,
     "notes": null,
     "damage_value": 60,
-    "fire_rate_value": 0.6
+    "fire_rate_value": 0.6,
+    "overview": "The Chainsaw is a weapon good for close combat and rushing into people as it deals great damage. It's capable of killing enemies in 3 swings or under a second with the M2 ability. It is also good for movement, as its ability grants the user extra movement speed when the M2 button is held."
   },
   {
     "slug": "knife",
@@ -231,7 +234,8 @@
     "reload": null,
     "notes": null,
     "damage_value": 40,
-    "fire_rate_value": 0.6
+    "fire_rate_value": 0.6,
+    "overview": "The Knife is a close-quarters Standard weapon known for its ability to one shot an opponent. It is typically effective for unexpected, sneaky attacks or finishing off opponents. Its versatility and unpredictability in various combat scenarios make it a valuable tool for players looking to outsmart their enemies in close-range encounters."
   },
   {
     "slug": "katana",
@@ -244,7 +248,8 @@
     "reload": null,
     "notes": null,
     "damage_value": 45,
-    "fire_rate_value": 0.7
+    "fire_rate_value": 0.7,
+    "overview": "The Katana is a well balanced melee used by players of all skill levels, it has a solid M1 damage[citation needed, who said that?] and has a unique ability to deflect bullets back at opponents, making it a common choice for countering high-DPS weapons."
   },
   {
     "slug": "battle-axe",
@@ -257,7 +262,8 @@
     "reload": null,
     "notes": null,
     "damage_value": 55,
-    "fire_rate_value": 0.7
+    "fire_rate_value": 0.7,
+    "overview": "The Battle Axe is a weapon which is designed to dominate melee encounters. While its sheer power comes at the cost of reduced movement speed, skilled players can leverage its strengths to great effect in both offensive and defensive scenarios."
   },
   {
     "slug": "flashbang",
@@ -270,7 +276,8 @@
     "reload": null,
     "notes": null,
     "damage_value": null,
-    "fire_rate_value": null
+    "fire_rate_value": null,
+    "overview": "The Flashbang is a weapon used for blinding enemies. Upon using it, you will throw the flashbang in the direction you're pointing, flashing a bright light as it explodes. Be aware that you can also accidentally blind yourself and your teammates too, not just your opponents."
   },
   {
     "slug": "medkit",
@@ -283,7 +290,8 @@
     "reload": null,
     "notes": "Heals over time when activated.",
     "damage_value": null,
-    "fire_rate_value": null
+    "fire_rate_value": null,
+    "overview": "The Medkit is a medical kit that allows the user to heal up in combat. Healing can be interrupted if the user takes damage or swaps weapons."
   },
   {
     "slug": "distortion",
@@ -296,7 +304,8 @@
     "reload": null,
     "notes": "Contraband rarity. Fires a 5-pellet spread (7 dmg each). Right-click creates a pulling vortex (12 stud radius, 30s cooldown).",
     "damage_value": 7,
-    "fire_rate_value": 0.4
+    "fire_rate_value": 0.4,
+    "overview": "The Distortion is a contraband weapon that is somewhat similar to the Shotgun. It shoots 5 bullets at once, which deals splash damage. Each individual bullet deals 7 damage, and there is no damage dropoff. There is a decent amount of spread, so hitting shots from further away is more difficult."
   },
   {
     "slug": "energy-rifle",
@@ -309,7 +318,8 @@
     "reload": null,
     "notes": "Prime rarity.",
     "damage_value": 20,
-    "fire_rate_value": 0.3
+    "fire_rate_value": 0.3,
+    "overview": "The Energy Rifle is a slightly slow automatic weapon that fires energy beams that bounce off walls. It serves as a somewhat oppressive weapon with its relatively short cooldown and infinite ammo."
   },
   {
     "slug": "flamethrower",
@@ -322,7 +332,8 @@
     "reload": null,
     "notes": "Prime rarity.",
     "damage_value": 85,
-    "fire_rate_value": null
+    "fire_rate_value": null,
+    "overview": "The Flamethrower deals fire damage in a short cone in front of itself, while also applying burning damage after the player is done torching the enemy. It regenerates fuel while not firing, including when it is unequipped."
   },
   {
     "slug": "grenade-launcher",
@@ -335,7 +346,8 @@
     "reload": "1.80s",
     "notes": "Prime rarity.",
     "damage_value": 40,
-    "fire_rate_value": 0.6
+    "fire_rate_value": 0.6,
+    "overview": "The Grenade Launcher is a weapon that rapidly shoots explosive arching projectiles. It can be used as a movement tool, launching the player forward if they hit a wall at the right angle."
   },
   {
     "slug": "crossbow",
@@ -348,7 +360,8 @@
     "reload": "1.15s",
     "notes": "Standard rarity.",
     "damage_value": 37.5,
-    "fire_rate_value": 1
+    "fire_rate_value": 1,
+    "overview": "The Crossbow is a primary weapon that is frequently used as an alternative to the Sniper. It has perfect accuracy while hip-firing, faster movement speed, and the ability to bypass Katana. The Crossbow has one ammo in the magazine, but since the reload speed is so fast, this is not a detriment to the player."
   },
   {
     "slug": "gunblade",
@@ -361,7 +374,8 @@
     "reload": null,
     "notes": "Standard rarity. Hybrid ranged/melee weapon — also has a melee blade combo (35 dmg, 8 stud reach) and a dash.",
     "damage_value": 45,
-    "fire_rate_value": 0.75
+    "fire_rate_value": 0.75,
+    "overview": "The Gunblade is a weapon that works as a hybrid, meaning it can switch to both a melee and a firearm upon hitting someone, and is mostly used from mid-range to close-range, depending on what mode it is in."
   },
   {
     "slug": "scepter",
@@ -374,7 +388,8 @@
     "reload": null,
     "notes": "Contraband rarity. Gamemode-exclusive reward weapon (RIVALS RNG). Cooldown not documented by the source wiki.",
     "damage_value": 25,
-    "fire_rate_value": null
+    "fire_rate_value": null,
+    "overview": "The Scepter is a weapon that, when fired, shoots a magic orb which explodes on impact or at the player in a short delay. If a player is hit within the splash radius or directly, it will deal 25 damage. It also has a magical distinct noise when equipped. Orbs fired by the scepter start out extremely slow, before speeding up to average speed at around 25 studs. Additionally, orbs fired at close range will not have splash damage upon hitting a surface. Orbs can deal critical damage on a direct hit, albeit doing no additional damage due to the Scepter having a ×1.00 critical hit multiplier."
   },
   {
     "slug": "warper",
@@ -387,7 +402,8 @@
     "reload": null,
     "notes": "Contraband rarity. Teleport/mobility secondary — no direct damage. Cooldown 0.25s per use.",
     "damage_value": null,
-    "fire_rate_value": 0.25
+    "fire_rate_value": 0.25,
+    "overview": "The Warper is a slightly slow automatic secondary weapon that fires portals. Each shot does not deal any damage. Press M1 to fire a portal, and M2 to fire the other. The portals will take more time to be created the farther the portals are from each other. When coming out from a portal, you get some slight momentum."
   },
   {
     "slug": "energy-pistols",
@@ -400,7 +416,8 @@
     "reload": null,
     "notes": "Prime rarity.",
     "damage_value": 2.1,
-    "fire_rate_value": 0.03
+    "fire_rate_value": 0.03,
+    "overview": "The Energy Pistols are two dual-wielded energy pistols. They serve as an oppressive weapon because of the fastest fire rate, infinite ammo, and no reload, which makes the user be able to keep shooting. It is extremely great for rushing players with low health."
   },
   {
     "slug": "exogun",
@@ -413,7 +430,8 @@
     "reload": "0.65s",
     "notes": "Prime rarity.",
     "damage_value": 10,
-    "fire_rate_value": 0.28
+    "fire_rate_value": 0.28,
+    "overview": "The Exogun is a light weapon which can quickly damage an opponent with minimal notice. With its splash damage, even at a far range you do not need to have good aim to hit an opponent. Additionally, it cannot be deflected by the Katana or absorbed by the Riot Shield, meaning that you cannot block its blasts. With the fastest reload speed, the Exogun has been widely regarded as one of the best secondaries and is used by beginners and experts alike."
   },
   {
     "slug": "slingshot",
@@ -426,7 +444,8 @@
     "reload": null,
     "notes": "Prime rarity.",
     "damage_value": 8,
-    "fire_rate_value": 0.1
+    "fire_rate_value": 0.1,
+    "overview": "The Slingshot is a rapid-firing weapon that shoots out bouncy balls. The balls can bounce from a surface and hit an opponent, dealing low damage with a high and spammy fire rate. Because of its bouncy tech, it excels in close-quarters combat and bypasses the Katana."
   },
   {
     "slug": "flare-gun",
@@ -439,7 +458,8 @@
     "reload": "0.77s",
     "notes": "Standard rarity.",
     "damage_value": 50,
-    "fire_rate_value": 0.25
+    "fire_rate_value": 0.25,
+    "overview": "The Flare Gun is a weapon that shoots a projectile, deals tick damage to enemies that come into contact with it, and continues to deal damage for a period of time even if the enemy leaves the AoE. It essentially acts as an alternative to the Molotov with a smaller area of effect, but higher damage potential and a longer lifespan."
   },
   {
     "slug": "glass-cannon",
@@ -452,7 +472,8 @@
     "reload": null,
     "notes": "Contraband rarity. Gamemode-exclusive (RIVALS RNG / Gun Game). One shot in the chamber (ammo 1) at high damage.",
     "damage_value": 150,
-    "fire_rate_value": null
+    "fire_rate_value": null,
+    "overview": "The Glass Cannon is a weapon that instantly kills anyone in one shot. Once shot, the gun will break, disappear, and use the animation of Fists instead."
   },
   {
     "slug": "maul",
@@ -465,7 +486,8 @@
     "reload": null,
     "notes": "Prime rarity. Has a jump-slam attack in addition to normal swings.",
     "damage_value": 75,
-    "fire_rate_value": 1
+    "fire_rate_value": 1,
+    "overview": "The Maul is a large hammer that delivers high damage; it has a slower attack rate than most weapons, and has a move speed de-buff."
   },
   {
     "slug": "spear",
@@ -478,7 +500,8 @@
     "reload": null,
     "notes": "Prime rarity. Melee combo damage shown; can also be thrown for 25 dmg (50 on critical), see wiki for full throw mechanics.",
     "damage_value": 15,
-    "fire_rate_value": 0.5
+    "fire_rate_value": 0.5,
+    "overview": "The Spear is a weapon that lets you strike your enemies quickly with three-hit rounds or use it as a longer-range melee weapon."
   },
   {
     "slug": "trowel",
@@ -491,7 +514,8 @@
     "reload": null,
     "notes": "Prime rarity. Builds temporary brick cover in addition to its melee attack.",
     "damage_value": 50,
-    "fire_rate_value": 0.6
+    "fire_rate_value": 0.6,
+    "overview": "The Trowel is a weapon that provides offense through its high base attack damage and defense through its ability. It also plays a role in area denial and hindering enemies, making it one of the most versatile weapons."
   },
   {
     "slug": "riot-shield",
@@ -504,7 +528,8 @@
     "reload": null,
     "notes": "Standard rarity.",
     "damage_value": 25,
-    "fire_rate_value": 0.7
+    "fire_rate_value": 0.7,
+    "overview": "The Riot Shield is a weapon that is a good choice for counter strategies, as it can block projectiles and damage from most weapons. Hitting an enemy with it will knock them back. The following weapons are not affected by Riot Shield: * Weapons with fire: Flamethrower, Flare Gun, Molotov * Weapons with explosions (AOE): Grenade Launcher, RPG, Exogun, Subspace Tripmine, Grenade, Satchel, and Distortion * The Spray"
   },
   {
     "slug": "scythe",
@@ -517,7 +542,8 @@
     "reload": null,
     "notes": "Standard rarity.",
     "damage_value": 35,
-    "fire_rate_value": 0.7
+    "fire_rate_value": 0.7,
+    "overview": "The Scythe is a weapon known for its dashing ability. Its ability provides extensive mobility which is useful for movement and quick attacks."
   },
   {
     "slug": "glast-shard",
@@ -530,7 +556,8 @@
     "reload": null,
     "notes": "Contraband rarity.",
     "damage_value": 1,
-    "fire_rate_value": 0.6
+    "fire_rate_value": 0.6,
+    "overview": "The Glast Shard is a weapon that is similar to the Knife. It also allows you to double jump."
   },
   {
     "slug": "grappler",
@@ -543,7 +570,8 @@
     "reload": null,
     "notes": "Contraband rarity. Grappling-hook mobility utility — no direct damage.",
     "damage_value": null,
-    "fire_rate_value": 8
+    "fire_rate_value": 8,
+    "overview": "The Grappler is a weapon that allows the player to shoot onto walls to quickly zip up them. However, if the player shoots onto an enemy instead, the player can bring the enemy towards the player and stun them for about 0.8s."
   },
   {
     "slug": "subspace-tripmine",
@@ -556,7 +584,8 @@
     "reload": null,
     "notes": "Prime rarity. Deployed trap; damage triggers on proximity.",
     "damage_value": 149,
-    "fire_rate_value": 0.5
+    "fire_rate_value": 0.5,
+    "overview": "The Subspace Tripmine is a weapon that, when used, places a mine down. Enemies that step on it will explode instantly and go airborne. You can also activate it intentionally, but you and your teammates won't take damage. Enemies cannot see placed tripmines, but your teammates can. Your teammates cannot activate placed tripmines."
   },
   {
     "slug": "warpstone",
@@ -569,7 +598,8 @@
     "reload": null,
     "notes": "Prime rarity. Teleport utility.",
     "damage_value": 1,
-    "fire_rate_value": 30
+    "fire_rate_value": 30,
+    "overview": "The Warpstone is a throwable weapon. When thrown, it teleports the user to where it lands."
   },
   {
     "slug": "freeze-ray",
@@ -582,7 +612,8 @@
     "reload": null,
     "notes": "Standard rarity. Slows/freezes on hit rather than dealing significant direct damage.",
     "damage_value": 0,
-    "fire_rate_value": 0.5
+    "fire_rate_value": 0.5,
+    "overview": "The Freeze Ray is a weapon that shoots a splash arching projectile. A distinct sound can be heard upon firing it. On impact, players within a 10-stud radius are frozen. Once frozen, players are unable to shoot, move their screen, or switch their weapons. Frozen players will immediately be unfrozen upon receiving any kind of damage, and damage received while frozen is halved."
   },
   {
     "slug": "grenade",
@@ -595,7 +626,8 @@
     "reload": null,
     "notes": "Standard rarity.",
     "damage_value": 1,
-    "fire_rate_value": 30
+    "fire_rate_value": 30,
+    "overview": "The Grenade is a weapon that explodes after a set amount of time and is throwable. It follows an arched trajectory. This is the default utility weapon that you get for free once you join the game."
   },
   {
     "slug": "jump-pad",
@@ -608,7 +640,8 @@
     "reload": null,
     "notes": "Standard rarity. Deployable mobility utility — no direct damage.",
     "damage_value": null,
-    "fire_rate_value": 0.5
+    "fire_rate_value": 0.5,
+    "overview": "The Jump Pad is a weapon used for providing extra movement and mobility through the map. Each Jump Pad has a lifetime of 90 seconds."
   },
   {
     "slug": "molotov",
@@ -621,7 +654,8 @@
     "reload": null,
     "notes": "Standard rarity.",
     "damage_value": 1,
-    "fire_rate_value": 30
+    "fire_rate_value": 30,
+    "overview": "The Molotov is a weapon that acts similar to Flare Gun. It spreads fire when it comes into contact with any surface, setting nearby enemies on fire."
   },
   {
     "slug": "satchel",
@@ -634,7 +668,8 @@
     "reload": null,
     "notes": "Standard rarity.",
     "damage_value": 0,
-    "fire_rate_value": 0.5
+    "fire_rate_value": 0.5,
+    "overview": "The Satchel is a weapon that sticks onto any solid surface on use, including Riot Shields. Satchels that are surface-bound do critical damage, unlike airborne ones. Thrown Satchels have a total lifespan of 1 minute & 30 seconds."
   },
   {
     "slug": "smoke-grenade",
@@ -647,7 +682,8 @@
     "reload": null,
     "notes": "Standard rarity.",
     "damage_value": 1,
-    "fire_rate_value": 0.5
+    "fire_rate_value": 0.5,
+    "overview": "The Smoke Grenade is a weapon that creates a cloud of smoke on use. The smoke cloud has several uses; it extinguishes any fire that comes into contact with it, reduces the vision of any players inside of it, and can be expanded by throwing additional Smoke Grenade(s) into the cloud."
   },
   {
     "slug": "war-horn",
@@ -660,7 +696,8 @@
     "reload": null,
     "notes": "Standard rarity.",
     "damage_value": null,
-    "fire_rate_value": 45
+    "fire_rate_value": 45,
+    "overview": "The War Horn is a utility that gives additional mobility and speed to your whole team."
   },
   {
     "slug": "elixir",
@@ -673,7 +710,8 @@
     "reload": null,
     "notes": "Contraband rarity.",
     "damage_value": 50,
-    "fire_rate_value": 30
+    "fire_rate_value": 30,
+    "overview": "The Elixir is a weapon that is throwable and has 2 mechanics. The first mechanic is by throwing it at the enemy, which will slowly deal 50 damage to the enemy. The second mechanic is by throwing it directly at you or your teammate, which will heal 25 health."
   },
   {
     "slug": "rng-dice",
@@ -686,6 +724,7 @@
     "reload": null,
     "notes": "Contraband rarity. Gamemode-exclusive (RIVALS RNG) — random-effect utility, no fixed damage.",
     "damage_value": null,
-    "fire_rate_value": 4
+    "fire_rate_value": 4,
+    "overview": "The RNG Dice is a weapon exclusive to the RIVALS RNG gamemode. It rolls a random weapon upon use, including gamemode Exclusive weapons. However, it only holds a maximum of 2 weapons in your slot. If you roll when you have the maximum number of weapons, it will remove the weapon in the second slot and replace it with a new slot."
   }
 ]

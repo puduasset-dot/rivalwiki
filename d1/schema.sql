@@ -9,6 +9,7 @@ CREATE TABLE weapons (
   ammo TEXT,
   reload TEXT,
   notes TEXT,
+  overview TEXT,
   damage_value REAL,
   fire_rate_value REAL
 );

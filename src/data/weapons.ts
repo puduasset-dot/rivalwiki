@@ -12,6 +12,8 @@ export interface Weapon {
   ammo?: string;
   reload?: string;
   notes?: string;
+  /** A few sentences on playstyle/strategy, pulled from the wiki's per-weapon Overview section. */
+  overview?: string;
   /** Close-range peak damage per shot/swing, for the visual stat bar. Omitted where not confidently derivable from the source data. */
   damageValue?: number;
   /** Seconds between shots/swings — lower is faster. Omitted for burst/unconfirmed weapons. */
@@ -28,6 +30,7 @@ interface WeaponRow {
   ammo: string | null;
   reload: string | null;
   notes: string | null;
+  overview: string | null;
   damage_value: number | null;
   fire_rate_value: number | null;
 }
@@ -45,6 +48,7 @@ export const weapons: Weapon[] = (raw as WeaponRow[]).map((r) => ({
   ammo: r.ammo ?? undefined,
   reload: r.reload ?? undefined,
   notes: r.notes ?? undefined,
+  overview: r.overview ?? undefined,
   damageValue: r.damage_value ?? undefined,
   fireRateValue: r.fire_rate_value ?? undefined,
 }));

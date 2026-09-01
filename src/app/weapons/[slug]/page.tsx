@@ -16,7 +16,9 @@ export async function generateMetadata(props: PageProps<"/weapons/[slug]">): Pro
   if (!weapon) return {};
   return {
     title: `${weapon.name} — RIVALS Weapon Stats`,
-    description: `${weapon.name} stats: damage ${weapon.damage}, fire rate ${weapon.fireRate}.`,
+    description: weapon.overview
+      ? weapon.overview.slice(0, 155)
+      : `${weapon.name} stats: damage ${weapon.damage}, fire rate ${weapon.fireRate}.`,
   };
 }
 
@@ -55,6 +57,13 @@ export default async function WeaponPage(props: PageProps<"/weapons/[slug]">) {
           <SourceNote label={DATA_SOURCE.label} url={DATA_SOURCE.url} lastChecked={DATA_SOURCE.lastChecked} />
         </div>
       </div>
+
+      {weapon.overview && (
+        <div className="space-y-2">
+          <h2 className="font-semibold text-white text-lg">Overview</h2>
+          <p className="text-sm text-neutral-300 leading-relaxed">{weapon.overview}</p>
+        </div>
+      )}
 
       {(weapon.damageValue || rps) && (
         <div className="rounded-lg border border-neutral-800 bg-neutral-900 p-4 space-y-3">

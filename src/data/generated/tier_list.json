@@ -24,8 +24,8 @@
     "reason": "Best free weapon in the game: 12 dmg at a 0.10s fire rate with a 20/100 ammo pool. Season 3 traded a damage nerf (13→12) for a fire-rate buff (0.11s→0.10s)."
   },
   {
-    "weapon_slug": "compound-bow",
-    "weapon_name": "Compound Bow",
+    "weapon_slug": "bow",
+    "weapon_name": "Bow",
     "tier": "A",
     "reason": "High skill/high reward: pierces Riot Shields via its Heavy Draw mechanic, but low projectile velocity means shots must be heavily led."
   },
