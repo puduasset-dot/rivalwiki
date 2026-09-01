@@ -74,6 +74,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
                 </Link>
               ))}
             </nav>
+            <div className="flex gap-2 text-xs text-neutral-500">
+              <Link href="/" className="hover:text-white transition-colors">EN</Link>
+              <span>·</span>
+              <Link href="/ja" className="hover:text-white transition-colors">日本語</Link>
+              <span>·</span>
+              <Link href="/zh" className="hover:text-white transition-colors">中文</Link>
+            </div>
           </div>
         </header>
 

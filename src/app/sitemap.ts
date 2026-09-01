@@ -23,6 +23,8 @@ const STATIC_ROUTES = [
   "/game-modes",
   "/best-loadouts",
   "/tools/crosshair-generator",
+  "/ja",
+  "/zh",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
