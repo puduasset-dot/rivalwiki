@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { WeaponComparisonClient } from "./WeaponComparisonClient";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Weapon Comparison Tool",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function WeaponComparisonPage() {
   return (
     <div className="space-y-6">
+      <PageBanner src="/media/gameplay-campfire.jpg" alt="RIVALS snowy map at night" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">Weapon Comparison</h1>
         <p className="text-sm text-neutral-400">

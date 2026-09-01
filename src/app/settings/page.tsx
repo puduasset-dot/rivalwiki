@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { FOV_GUIDANCE, SENSITIVITY_STEPS, RECOMMENDED_TOGGLES, SETTINGS_SOURCE } from "@/data/settings";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Best Settings",
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function SettingsPage() {
   return (
     <div className="space-y-8">
+      <PageBanner src="/media/gameplay-shooting-range.jpg" alt="RIVALS shooting range" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Best Settings</h1>
         <SourceNote label={SETTINGS_SOURCE.label} lastChecked={SETTINGS_SOURCE.lastChecked} />

@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { CrosshairGeneratorClient } from "./CrosshairGeneratorClient";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Crosshair Generator",
@@ -9,6 +10,7 @@ export const metadata: Metadata = {
 export default function CrosshairGeneratorPage() {
   return (
     <div className="space-y-6">
+      <PageBanner src="/media/gameplay-dusk-city.jpg" alt="RIVALS dusk map" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">Crosshair Generator</h1>
         <p className="text-sm text-neutral-400">

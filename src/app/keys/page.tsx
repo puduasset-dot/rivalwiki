@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { keyMethods, ECONOMY_SOURCE } from "@/data/economy";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Keys — How to Get More",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function KeysPage() {
   return (
     <div className="space-y-6">
+      <PageBanner src="/media/gameplay-museum-arches.jpg" alt="RIVALS museum map" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Keys</h1>
         <SourceNote label={ECONOMY_SOURCE.label} lastChecked={ECONOMY_SOURCE.lastChecked} />

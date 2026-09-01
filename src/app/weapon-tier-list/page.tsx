@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { tierList, TIER_LIST_SOURCE, type Tier } from "@/data/tier-list";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Weapon Tier List",
@@ -20,6 +21,7 @@ const TIER_COLOR: Record<Tier, string> = {
 export default function TierListPage() {
   return (
     <div className="space-y-6">
+      <PageBanner src="/media/gameplay-museum-hall.jpg" alt="RIVALS museum hall" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Weapon Tier List</h1>
         <SourceNote label={TIER_LIST_SOURCE.label} lastChecked={TIER_LIST_SOURCE.lastChecked} />

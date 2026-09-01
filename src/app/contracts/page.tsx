@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { CONTRACT_TYPES, ECONOMY_SOURCE } from "@/data/economy";
 import { SourceNote } from "@/components/SourceNote";
+import { PageBanner } from "@/components/PageBanner";
 
 export const metadata: Metadata = {
   title: "RIVALS Contracts",
@@ -11,6 +12,7 @@ export const metadata: Metadata = {
 export default function ContractsPage() {
   return (
     <div className="space-y-6">
+      <PageBanner src="/media/gameplay-museum-corridor.jpg" alt="RIVALS museum corridor" />
       <div className="space-y-2">
         <h1 className="text-2xl font-bold text-white">RIVALS Contracts</h1>
         <SourceNote label={ECONOMY_SOURCE.label} lastChecked={ECONOMY_SOURCE.lastChecked} />
