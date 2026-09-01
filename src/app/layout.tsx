@@ -110,6 +110,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
               </a>
               .
             </p>
+            <div className="flex flex-wrap gap-x-4 gap-y-1 pt-1">
+              <Link href="/about" className="hover:text-neutral-300 underline">About</Link>
+              <Link href="/privacy" className="hover:text-neutral-300 underline">Privacy Policy</Link>
+              <Link href="/terms" className="hover:text-neutral-300 underline">Terms of Service</Link>
+              <Link href="/contact" className="hover:text-neutral-300 underline">Contact</Link>
+            </div>
             <p>© {new Date().getFullYear()} RivalWiki.</p>
           </div>
         </footer>

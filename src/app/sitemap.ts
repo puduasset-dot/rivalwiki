@@ -25,6 +25,10 @@ const STATIC_ROUTES = [
   "/tools/crosshair-generator",
   "/ja",
   "/zh",
+  "/about",
+  "/privacy",
+  "/terms",
+  "/contact",
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
