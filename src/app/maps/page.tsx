@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { maps, MAPS_SOURCE, type MapCategory } from "@/data/maps";
+import { getMapGuide } from "@/data/map-guides";
 import { SourceNote } from "@/components/SourceNote";
 import { PageBanner } from "@/components/PageBanner";
 
@@ -38,12 +40,30 @@ export default function MapsPage() {
           <section key={cat.key} className="space-y-3">
             <h2 className="font-semibold text-white text-lg">{cat.label}</h2>
             <div className="grid sm:grid-cols-2 gap-3">
-              {list.map((m) => (
-                <div key={m.name} className="rounded-lg border border-neutral-800 bg-neutral-900 p-4">
-                  <p className="font-medium text-white">{m.name}</p>
-                  {m.notes && <p className="text-sm text-neutral-400 mt-1">{m.notes}</p>}
-                </div>
-              ))}
+              {list.map((m) => {
+                const guide = getMapGuide(
+                  m.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "")
+                );
+                const cardClass =
+                  "rounded-lg border border-neutral-800 bg-neutral-900 p-4 block hover:border-amber-400/60 transition-colors";
+                const body = (
+                  <>
+                    <p className="font-medium text-white">{m.name}</p>
+                    <p className="text-sm text-neutral-400 mt-1">
+                      {guide ? guide.overview.slice(0, 110) + "…" : m.notes}
+                    </p>
+                  </>
+                );
+                return guide ? (
+                  <Link key={m.name} href={`/maps/${guide.slug}`} className={cardClass}>
+                    {body}
+                  </Link>
+                ) : (
+                  <div key={m.name} className={cardClass}>
+                    {body}
+                  </div>
+                );
+              })}
             </div>
           </section>
         );

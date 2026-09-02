@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { gameModes, ZOMBIE_TOWER_NOTE, GAME_MODES_SOURCE, type GameMode } from "@/data/game-modes";
 import { SourceNote } from "@/components/SourceNote";
 import { PageBanner } from "@/components/PageBanner";
@@ -31,10 +32,14 @@ export default function GameModesPage() {
             <h2 className="font-semibold text-white text-lg">{cat}</h2>
             <div className="space-y-2">
               {list.map((m) => (
-                <div key={m.name} className="rounded-lg border border-neutral-800 bg-neutral-900 p-4">
+                <Link
+                  key={m.slug}
+                  href={`/game-modes/${m.slug}`}
+                  className="block rounded-lg border border-neutral-800 bg-neutral-900 p-4 hover:border-amber-400/60 transition-colors"
+                >
                   <p className="font-medium text-white">{m.name}</p>
                   <p className="text-sm text-neutral-400 mt-1">{m.desc}</p>
-                </div>
+                </Link>
               ))}
             </div>
           </section>

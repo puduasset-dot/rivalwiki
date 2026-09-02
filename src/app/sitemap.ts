@@ -1,5 +1,8 @@
 import type { MetadataRoute } from "next";
 import { weapons } from "@/data/weapons";
+import { buildWeaponPairs } from "@/data/weapon-compare";
+import { mapGuides } from "@/data/map-guides";
+import { gameModes } from "@/data/game-modes";
 
 export const dynamic = "force-static";
 
@@ -42,5 +45,20 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: "2026-08-31",
   }));
 
-  return [...staticEntries, ...weaponEntries];
+  const compareEntries = buildWeaponPairs().map((p) => ({
+    url: `${BASE_URL}/weapons/compare/${p.pairSlug}`,
+    lastModified: "2026-09-02",
+  }));
+
+  const mapEntries = mapGuides.map((m) => ({
+    url: `${BASE_URL}/maps/${m.slug}`,
+    lastModified: "2026-09-02",
+  }));
+
+  const gameModeEntries = gameModes.map((m) => ({
+    url: `${BASE_URL}/game-modes/${m.slug}`,
+    lastModified: "2026-09-02",
+  }));
+
+  return [...staticEntries, ...weaponEntries, ...compareEntries, ...mapEntries, ...gameModeEntries];
 }
