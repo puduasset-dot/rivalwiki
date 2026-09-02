@@ -61,14 +61,36 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: "2026-09-02",
   }));
 
+  const LOCALIZED_STATIC_ROUTES = [
+    "/weapons",
+    "/maps",
+    "/game-modes",
+    "/secrets",
+    "/ranks",
+    "/keys",
+    "/contracts",
+    "/settings",
+    "/skins",
+    "/weapon-tier-list",
+    "/movement",
+    "/beginner-guide",
+    "/best-loadouts",
+    "/codes",
+    "/tools/weapon-comparison",
+    "/tools/loadout-builder",
+    "/tools/crosshair-generator",
+    "/about",
+    "/privacy",
+    "/terms",
+    "/contact",
+  ];
+
   const LOCALES = ["ja", "zh"];
   const localizedEntries = LOCALES.flatMap((locale) => [
-    { url: `${BASE_URL}/${locale}/weapons`, lastModified: "2026-09-02" },
+    ...LOCALIZED_STATIC_ROUTES.map((route) => ({ url: `${BASE_URL}/${locale}${route}`, lastModified: "2026-09-02" })),
     ...weapons.map((w) => ({ url: `${BASE_URL}/${locale}/weapons/${w.slug}`, lastModified: "2026-09-02" })),
     ...buildWeaponPairs().map((p) => ({ url: `${BASE_URL}/${locale}/weapons/compare/${p.pairSlug}`, lastModified: "2026-09-02" })),
-    { url: `${BASE_URL}/${locale}/maps`, lastModified: "2026-09-02" },
     ...mapGuides.map((m) => ({ url: `${BASE_URL}/${locale}/maps/${m.slug}`, lastModified: "2026-09-02" })),
-    { url: `${BASE_URL}/${locale}/game-modes`, lastModified: "2026-09-02" },
     ...gameModes.map((m) => ({ url: `${BASE_URL}/${locale}/game-modes/${m.slug}`, lastModified: "2026-09-02" })),
   ]);
 
