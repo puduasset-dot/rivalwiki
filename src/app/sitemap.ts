@@ -60,5 +60,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: "2026-09-02",
   }));
 
-  return [...staticEntries, ...weaponEntries, ...compareEntries, ...mapEntries, ...gameModeEntries];
+  const LOCALES = ["ja", "zh"];
+  const localizedEntries = LOCALES.flatMap((locale) => [
+    { url: `${BASE_URL}/${locale}/weapons`, lastModified: "2026-09-02" },
+    ...weapons.map((w) => ({ url: `${BASE_URL}/${locale}/weapons/${w.slug}`, lastModified: "2026-09-02" })),
+    ...buildWeaponPairs().map((p) => ({ url: `${BASE_URL}/${locale}/weapons/compare/${p.pairSlug}`, lastModified: "2026-09-02" })),
+    { url: `${BASE_URL}/${locale}/maps`, lastModified: "2026-09-02" },
+    ...mapGuides.map((m) => ({ url: `${BASE_URL}/${locale}/maps/${m.slug}`, lastModified: "2026-09-02" })),
+    { url: `${BASE_URL}/${locale}/game-modes`, lastModified: "2026-09-02" },
+    ...gameModes.map((m) => ({ url: `${BASE_URL}/${locale}/game-modes/${m.slug}`, lastModified: "2026-09-02" })),
+  ]);
+
+  return [...staticEntries, ...weaponEntries, ...compareEntries, ...mapEntries, ...gameModeEntries, ...localizedEntries];
 }
