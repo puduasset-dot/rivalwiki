@@ -29,6 +29,9 @@ const copy: HomeCopy = {
   mapsTitle: "浏览地图",
   mapsDesc: "收录 35 张地图——常规轮换图、Big 变体图,以及仅限私服的 Legacy 地图。",
   mapsCta: "查看全部地图 →",
+  secretsTitle: "隐藏机制与彩蛋",
+  secretsDesc: "51 条有据可查的隐藏内容——未公开的武器交互、进阶走位技巧、隐藏房间,以及游戏里从不会主动告诉你的彩蛋。",
+  secretsCta: "挖掘隐藏内容 →",
   moreGuidesTitle: "更多攻略",
   moreGuides: [
     { href: "/beginner-guide", title: "新手指南" },

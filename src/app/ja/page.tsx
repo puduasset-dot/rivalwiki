@@ -30,6 +30,9 @@ const copy: HomeCopy = {
   mapsTitle: "マップ一覧",
   mapsDesc: "通常ローテーション、Bigマップ、レガシー(プライベートサーバー限定)マップなど35種類を掲載。",
   mapsCta: "全マップを見る →",
+  secretsTitle: "隠し要素・イースターエッグ",
+  secretsDesc: "出典付きの隠し要素51件——未公開の武器の相互作用、上級者向けの移動テク、隠し部屋、ゲームが教えてくれないイースターエッグまで。",
+  secretsCta: "隠し要素を見る →",
   moreGuidesTitle: "その他のガイド",
   moreGuides: [
     { href: "/beginner-guide", title: "初心者ガイド" },

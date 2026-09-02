@@ -26,6 +26,9 @@ const copy: HomeCopy = {
   mapsTitle: "Explore the maps",
   mapsDesc: "35 maps tracked — regular rotation, big variants, and legacy private-server maps.",
   mapsCta: "See all maps →",
+  secretsTitle: "Hidden mechanics & easter eggs",
+  secretsDesc: "51 sourced secrets — undocumented weapon interactions, advanced movement tech, hidden rooms, and easter eggs the game never tells you about.",
+  secretsCta: "Uncover the secrets →",
   moreGuidesTitle: "More guides",
   moreGuides: [
     { href: "/beginner-guide", title: "Beginner Guide" },

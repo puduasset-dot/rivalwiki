@@ -16,6 +16,7 @@ const STATIC_ROUTES = [
   "/tools/weapon-comparison",
   "/tools/loadout-builder",
   "/maps",
+  "/secrets",
   "/ranks",
   "/keys",
   "/contracts",

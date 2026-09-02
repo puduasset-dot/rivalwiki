@@ -30,6 +30,7 @@ const NAV_LINKS = [
   { href: "/weapon-tier-list", label: "Tier List" },
   { href: "/tools/weapon-comparison", label: "Compare Tool" },
   { href: "/maps", label: "Maps" },
+  { href: "/secrets", label: "Secrets" },
   { href: "/ranks", label: "Ranks" },
 ];
 

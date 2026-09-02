@@ -16,6 +16,9 @@ export interface HomeCopy {
   mapsTitle: string;
   mapsDesc: string;
   mapsCta: string;
+  secretsTitle: string;
+  secretsDesc: string;
+  secretsCta: string;
   moreGuidesTitle: string;
   moreGuides: { href: string; title: string }[];
   whyTitle: string;
@@ -95,6 +98,23 @@ export function HomeContent({ copy }: { copy: HomeCopy }) {
           <p className="text-sm text-neutral-300">{copy.mapsDesc}</p>
           <Link href="/maps" className="text-sm text-amber-400 hover:underline w-fit">
             {copy.mapsCta}
+          </Link>
+        </div>
+      </section>
+
+      <section className="relative rounded-xl overflow-hidden border border-amber-400/30 h-40">
+        <Image
+          src="/media/gameplay-shooting-range.jpg"
+          alt="RIVALS gameplay screenshot"
+          fill
+          className="object-cover"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-neutral-950 via-neutral-950/50 to-transparent" />
+        <div className="absolute inset-0 flex flex-col justify-center gap-2 p-6 max-w-md">
+          <h2 className="font-semibold text-white text-lg">{copy.secretsTitle}</h2>
+          <p className="text-sm text-neutral-300">{copy.secretsDesc}</p>
+          <Link href="/secrets" className="text-sm text-amber-400 hover:underline w-fit">
+            {copy.secretsCta}
           </Link>
         </div>
       </section>
