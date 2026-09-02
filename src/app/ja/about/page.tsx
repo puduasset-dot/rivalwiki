@@ -28,9 +28,9 @@ export default function AboutPageJa() {
         <h2 className="text-lg font-semibold text-white pt-2">このサイトが違う理由</h2>
         <p>
           長い記事に頼る代わりに、小規模なデータベース(武器・コード・マップ・ティアリスト)からページを自動生成する仕組みと、いくつかのインタラクティブツール——
-          <Link href="/tools/weapon-comparison" className="text-amber-400 hover:underline">武器比較</Link>、
-          <Link href="/tools/loadout-builder" className="text-amber-400 hover:underline">ロードアウトビルダー</Link>、
-          <Link href="/tools/crosshair-generator" className="text-amber-400 hover:underline">照準ジェネレーター</Link>
+          <Link href="/ja/tools/weapon-comparison" className="text-amber-400 hover:underline">武器比較</Link>、
+          <Link href="/ja/tools/loadout-builder" className="text-amber-400 hover:underline">ロードアウトビルダー</Link>、
+          <Link href="/ja/tools/crosshair-generator" className="text-amber-400 hover:underline">照準ジェネレーター</Link>
           ——を用意しています。具体的な質問で検索したときに、2,000語の埋め草文章ではなく、直接的な答えにたどり着けることを目指しています。
         </p>
 
@@ -46,7 +46,7 @@ export default function AboutPageJa() {
         <h2 className="text-lg font-semibold text-white pt-2">質問・訂正について</h2>
         <p>
           間違っている、または古くなっているデータを見つけた場合は、
-          <Link href="/contact" className="text-amber-400 hover:underline">Contactページ</Link>
+          <Link href="/ja/contact" className="text-amber-400 hover:underline">Contactページ</Link>
           を参照して連絡方法を確認してください。
         </p>
       </div>

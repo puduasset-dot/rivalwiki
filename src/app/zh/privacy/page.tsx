@@ -59,7 +59,7 @@ export default function PrivacyPageZh() {
         <h2 className="text-lg font-semibold text-white pt-2">你的选择</h2>
         <p>
           你可以使用浏览器扩展或内置设置来阻止统计分析和广告 Cookie,使用上方的退出链接,或通过
-          <Link href="/contact" className="text-amber-400 hover:underline">联系页面</Link>
+          <Link href="/zh/contact" className="text-amber-400 hover:underline">联系页面</Link>
           就任何隐私问题联系我们。
         </p>
 

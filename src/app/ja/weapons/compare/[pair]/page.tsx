@@ -137,7 +137,7 @@ export default async function WeaponComparePageJa(props: PageProps<"/ja/weapons/
         ))}
       </div>
 
-      <Link href="/tools/weapon-comparison" className="inline-block text-sm text-amber-400 hover:underline">
+      <Link href="/ja/tools/weapon-comparison" className="inline-block text-sm text-amber-400 hover:underline">
         {t.compareAnother}
       </Link>
     </div>

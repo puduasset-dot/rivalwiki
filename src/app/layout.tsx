@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import Link from "next/link";
+import { SiteHeader } from "@/components/SiteHeader";
+import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -22,17 +23,6 @@ export const metadata: Metadata = {
   description:
     "Player toolbox for RIVALS on Roblox: weapon database, tier list, codes, and interactive tools like the weapon comparison calculator.",
 };
-
-const NAV_LINKS = [
-  { href: "/beginner-guide", label: "Beginner Guide" },
-  { href: "/codes", label: "Codes" },
-  { href: "/weapons", label: "Weapons" },
-  { href: "/weapon-tier-list", label: "Tier List" },
-  { href: "/tools/weapon-comparison", label: "Compare Tool" },
-  { href: "/maps", label: "Maps" },
-  { href: "/secrets", label: "Secrets" },
-  { href: "/ranks", label: "Ranks" },
-];
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
@@ -59,67 +49,13 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         />
       </head>
       <body className="min-h-full flex flex-col bg-neutral-950 text-neutral-100">
-        <header className="border-b border-neutral-800 bg-neutral-950/95 sticky top-0 z-10">
-          <div className="mx-auto max-w-5xl flex flex-wrap items-center justify-between gap-x-4 gap-y-2 px-4 py-3">
-            <Link href="/" className="font-bold text-lg tracking-tight text-white">
-              Rival<span className="text-amber-400">Wiki</span>
-            </Link>
-            <nav className="flex flex-wrap gap-x-4 gap-y-1 text-sm">
-              {NAV_LINKS.map((link) => (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="text-neutral-300 hover:text-white transition-colors"
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </nav>
-            <div className="flex gap-2 text-xs text-neutral-500">
-              <Link href="/" className="hover:text-white transition-colors">EN</Link>
-              <span>·</span>
-              <Link href="/ja" className="hover:text-white transition-colors">日本語</Link>
-              <span>·</span>
-              <Link href="/zh" className="hover:text-white transition-colors">中文</Link>
-            </div>
-          </div>
-        </header>
+        <SiteHeader />
 
         <main className="flex-1 mx-auto w-full max-w-5xl px-4 py-8">
           {children}
         </main>
 
-        <footer className="border-t border-neutral-800 mt-12">
-          <div className="mx-auto max-w-5xl px-4 py-6 text-xs text-neutral-500 space-y-2">
-            <p>
-              RivalWiki is an unofficial fan-made resource and is not affiliated
-              with, endorsed by, or sponsored by Nosniy Games or Roblox
-              Corporation. RIVALS is a trademark of its respective owner.
-            </p>
-            <p>
-              Game icon via Roblox&apos;s official thumbnail API. Some
-              screenshots are stills from RIVALS&apos; official Roblox store
-              page preview video; others are real gameplay captured by the
-              site owner while playing. Weapon icons sourced from the community-maintained{" "}
-              <a
-                href="https://robloxrivals.fandom.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-neutral-300 underline"
-              >
-                RIVALS Fandom wiki
-              </a>
-              .
-            </p>
-            <div className="flex flex-wrap gap-x-4 gap-y-1 pt-1">
-              <Link href="/about" className="hover:text-neutral-300 underline">About</Link>
-              <Link href="/privacy" className="hover:text-neutral-300 underline">Privacy Policy</Link>
-              <Link href="/terms" className="hover:text-neutral-300 underline">Terms of Service</Link>
-              <Link href="/contact" className="hover:text-neutral-300 underline">Contact</Link>
-            </div>
-            <p>© {new Date().getFullYear()} RivalWiki.</p>
-          </div>
-        </footer>
+        <SiteFooter />
       </body>
     </html>
   );

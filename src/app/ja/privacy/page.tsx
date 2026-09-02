@@ -59,7 +59,7 @@ export default function PrivacyPageJa() {
         <h2 className="text-lg font-semibold text-white pt-2">選択肢について</h2>
         <p>
           ブラウザ拡張機能や標準機能を使ってアナリティクス・広告用Cookieをブロックしたり、上記のオプトアウトリンクを利用したり、プライバシーに関する質問があれば
-          <Link href="/contact" className="text-amber-400 hover:underline">Contactページ</Link>
+          <Link href="/ja/contact" className="text-amber-400 hover:underline">Contactページ</Link>
           からお問い合わせください。
         </p>
 

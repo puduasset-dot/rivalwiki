@@ -22,7 +22,7 @@ export default function TermsPageZh() {
         <h2 className="text-lg font-semibold text-white pt-2">仅供信息参考</h2>
         <p>
           RivalWiki 提供关于 Roblox 游戏 RIVALS 的攻略、工具和数据,仅供信息参考之用。我们从社区来源聚合数据、兑换码和排名,并努力保持准确和及时,但 RIVALS 会持续更新并进行平衡性调整——请把本站的内容当作尽力而为的快照,而不是保证。凡是我们无法确认的数字,会标注为「未确认」而不是靠猜测填补。关于我们如何获取数据的更多说明,详见
-          <Link href="/about" className="text-amber-400 hover:underline">关于页面</Link>
+          <Link href="/zh/about" className="text-amber-400 hover:underline">关于页面</Link>
           。
         </p>
 
@@ -54,7 +54,7 @@ export default function TermsPageZh() {
         <h2 className="text-lg font-semibold text-white pt-2">联系我们</h2>
         <p>
           对本条款有疑问?请查看
-          <Link href="/contact" className="text-amber-400 hover:underline">联系页面</Link>
+          <Link href="/zh/contact" className="text-amber-400 hover:underline">联系页面</Link>
           。
         </p>
       </div>

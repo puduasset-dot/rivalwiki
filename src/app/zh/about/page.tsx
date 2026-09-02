@@ -28,9 +28,9 @@ export default function AboutPageZh() {
         <h2 className="text-lg font-semibold text-white pt-2">这里和别的攻略站有什么不一样</h2>
         <p>
           我们没有依赖长篇文章,而是用一个小型数据库(武器、兑换码、地图、梯度榜)自动生成页面,再加上几个交互工具——
-          <Link href="/tools/weapon-comparison" className="text-amber-400 hover:underline">武器对比</Link>、
-          <Link href="/tools/loadout-builder" className="text-amber-400 hover:underline">配装生成器</Link>、
-          <Link href="/tools/crosshair-generator" className="text-amber-400 hover:underline">准星生成器</Link>
+          <Link href="/zh/tools/weapon-comparison" className="text-amber-400 hover:underline">武器对比</Link>、
+          <Link href="/zh/tools/loadout-builder" className="text-amber-400 hover:underline">配装生成器</Link>、
+          <Link href="/zh/tools/crosshair-generator" className="text-amber-400 hover:underline">准星生成器</Link>
           。目标是让你搜到具体问题时,直接落地到答案本身,而不是先读两千字的废话。
         </p>
 
@@ -46,7 +46,7 @@ export default function AboutPageZh() {
         <h2 className="text-lg font-semibold text-white pt-2">问题或勘误</h2>
         <p>
           发现数据有误或已过期?请查看
-          <Link href="/contact" className="text-amber-400 hover:underline">联系页面</Link>
+          <Link href="/zh/contact" className="text-amber-400 hover:underline">联系页面</Link>
           了解联系方式。
         </p>
       </div>

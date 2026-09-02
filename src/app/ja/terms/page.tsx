@@ -22,7 +22,7 @@ export default function TermsPageJa() {
         <h2 className="text-lg font-semibold text-white pt-2">情報提供目的のみ</h2>
         <p>
           RivalWikiは、Robloxのゲーム「RIVALS」に関するガイド・ツール・データを情報提供目的で提供しています。統計値・コード・ランキングはコミュニティの情報源から集約し、正確性と最新性の維持に努めていますが、RIVALSは頻繁にアップデートされバランス調整も行われるため、ここに掲載されている内容はあくまでベストエフォートによるスナップショットであり、保証されるものではありません。数値を確認できなかった場合は、憶測ではなく「未確認」と表示しています。データの出典についての詳細は
-          <Link href="/about" className="text-amber-400 hover:underline">About</Link>
+          <Link href="/ja/about" className="text-amber-400 hover:underline">About</Link>
           をご覧ください。
         </p>
 
@@ -54,7 +54,7 @@ export default function TermsPageJa() {
         <h2 className="text-lg font-semibold text-white pt-2">お問い合わせ</h2>
         <p>
           本規約に関するご質問は
-          <Link href="/contact" className="text-amber-400 hover:underline">Contactページ</Link>
+          <Link href="/ja/contact" className="text-amber-400 hover:underline">Contactページ</Link>
           をご覧ください。
         </p>
       </div>

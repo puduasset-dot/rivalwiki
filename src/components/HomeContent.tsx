@@ -13,9 +13,11 @@ export interface HomeCopy {
     title: string;
     desc: (codesCount: number, weaponsCount: number) => string;
   }[];
+  mapsHref: string;
   mapsTitle: string;
   mapsDesc: string;
   mapsCta: string;
+  secretsHref: string;
   secretsTitle: string;
   secretsDesc: string;
   secretsCta: string;
@@ -96,7 +98,7 @@ export function HomeContent({ copy }: { copy: HomeCopy }) {
         <div className="absolute inset-0 flex flex-col justify-center gap-2 p-6 max-w-md">
           <h2 className="font-semibold text-white text-lg">{copy.mapsTitle}</h2>
           <p className="text-sm text-neutral-300">{copy.mapsDesc}</p>
-          <Link href="/maps" className="text-sm text-amber-400 hover:underline w-fit">
+          <Link href={copy.mapsHref} className="text-sm text-amber-400 hover:underline w-fit">
             {copy.mapsCta}
           </Link>
         </div>
@@ -113,7 +115,7 @@ export function HomeContent({ copy }: { copy: HomeCopy }) {
         <div className="absolute inset-0 flex flex-col justify-center gap-2 p-6 max-w-md">
           <h2 className="font-semibold text-white text-lg">{copy.secretsTitle}</h2>
           <p className="text-sm text-neutral-300">{copy.secretsDesc}</p>
-          <Link href="/secrets" className="text-sm text-amber-400 hover:underline w-fit">
+          <Link href={copy.secretsHref} className="text-sm text-amber-400 hover:underline w-fit">
             {copy.secretsCta}
           </Link>
         </div>
